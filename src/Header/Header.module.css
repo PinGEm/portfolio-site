@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 0%, 17%, 0.51); 
+    width: 100%;
+}
+
+header img{
+    margin-top: 0.1%;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    transition: 0.3s ease-in-out;
+}
+
+.logo{
+    color:white;
+    flex-grow: 1.25;
+    margin-top:0.05%;
+    width:20%;
+    align-items:center;
+    display:flex;
+    margin-left: 8%;
+    transition: 0.15s ease-in-out;
+}
+
+.text{
+    margin-left:2%;
+    line-height: 0.5em;
+}
+
+header h1, h2, a, button{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 435;
+    font-style: normal;
+}
+
+header h1{
+    font-size: 1.3em;
+    letter-spacing: 1.1px;
+}
+
+header h2{
+    color: #B2B2B2;
+    font-size: 1em;
+    transition: 0.15s ease-in-out;
+}
+
+nav{
+    flex-grow: 2;
+    margin-right:2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #D7D7D7;
+    font-size: 1.2em;
+    margin-right: 30px;
+    transition: 0.1s cubic-bezier(.22,.5,.92,.59); /* note to self: probably change to a custom beizer transition */
+}
+
+button{
+    cursor: pointer;
+    border-style: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #25A7E5 0%, #3074C2 66%, #2147A9 100%);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top:0.25%;
+    padding-bottom:0.25%;
+    font-size: 1.3rem;
+    margin-right:2.5%;
+    box-shadow: 0 0 10px hsla(199, 79%, 52%, 0.25);
+    transition: background-image 0.35s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button a{
+    color:white;
+    text-decoration: none;
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #25A7E5 0%, #337ed4 66%, #295ad4 100%);
+    box-shadow: 0 0 15px hsla(199, 79%, 52%, 0.75);
+}
+
+#selected{
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    padding-left:22px;
+    padding-right:22px;
+    color: #3ABDFF;
+    background-color: #173C4D;
+    border-style:solid;
+    border-color: #0E657B;
+    border-radius:10px;
+    border-width: 2px;
+}
+
+#selected:hover{
+    background-color: #1f5269;
+}
+
+nav a:hover:not(#selected){
+    font-size: 1.15em;
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:22px;
+    padding-right:22px;
+    background-color: hsla(0, 0%, 67%, 0.25);
+    border: none;
+    border-radius:10px;
+    border-width: 2px;
+}
+
+.logo:hover{
+    color: #3ABDFF;
+}
+
+.logo:hover h2{
+    color:#376479;
+}
+
+.logo:hover img{
+    background-color: hsl(212, 65%, 52%, 0.25);
+    box-shadow: 0 0 20px hsla(199, 79%, 52%, 0.75);
+}
