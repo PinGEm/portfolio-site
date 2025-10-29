@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 footer{
-    line-height: 0.9;
+    z-index: 5;
+    box-shadow: 0px 15px 10px -1px hsla(0,0%,0%, 0.15) inset;
     font-family: "DM Sans", sans-serif;
     color:white;
     position:absolute;
@@ -29,11 +30,17 @@ footer a{
 }
 
 .section_one{
+    margin-top:0.4%;
     margin-left:3%;
 }
 
 .socials{
+    margin-top:0.4%;
     margin-right:7.5%;
+}
+
+.section{
+    margin-top:0%;
 }
 
 .social{
@@ -51,4 +58,12 @@ footer a{
     display:flex;
     justify-content: space-between;
     align-items:center;
+}
+
+.links a{
+    transition: all 0.15s ease-in-out;
+}
+
+.links a:hover{
+    color: #3ABDFF;
 }

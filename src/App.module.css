@@ -1,0 +1,239 @@
+
+/* Moving Elements */
+
+.baseMoveElement{
+  z-index: 0;
+  position: fixed;
+  width:50px;
+  height:40px;
+  background-color: hsla(204, 82%, 42%, 0.085);
+  transition:all 0.2s ease-out;
+}
+
+.baseMoveElement:hover:not(:active){
+  scale:1.015;
+  background-color: hsla(204, 84%, 50%, 0.15);
+}
+
+.firstElem{
+  --vwStart: 94vw; --vhStart: 90vh; --rotateStart: 9.98deg;
+  --vwEnd: 94vw; --vhEnd: 86vh; --rotateEnd: 15deg;
+
+  --widthStart: 77px; --widthEnd: 77px;
+
+  --heightStart: 76px; --heightEnd: 76px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.secondElem{
+  --vwStart: 86vw; --vhStart: 77vh; --rotateStart: -50deg;
+  --vwEnd: 86vw; --vhEnd: 74vh; --rotateEnd: -58deg;
+
+  --widthStart: 99px; --widthEnd: 101px;
+
+  --heightStart: 98px; --heightEnd: 100px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.thirdElem{
+  --vwStart: 80vw; --vhStart: 89vh; --rotateStart: 42.46deg;
+  --vwEnd: 80vw; --vhEnd: 85vh; --rotateEnd: 55deg;
+
+  --widthStart: 57px; --widthEnd: 58px;
+
+  --heightStart: 57px; --heightEnd: 58px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.fourthElem{
+  --vwStart: 72vw; --vhStart: 78vh; --rotateStart: -56.45deg;
+  --vwEnd: 72vw; --vhEnd: 72vh; --rotateEnd: -49.15deg;
+
+  --widthStart: 108px; --widthEnd: 109.25px;
+
+  --heightStart: 108px; --heightEnd: 109.25px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.fifthELem{
+  --vwStart: 94vw; --vhStart: 64vh; --rotateStart: 113.26deg;
+  --vwEnd: 94vw; --vhEnd: 58vh; --rotateEnd: 107.22deg;
+
+  --widthStart: 98px; --widthEnd: 99px;
+
+  --heightStart: 97px; --heightEnd: 98px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.sixthElem{
+  --vwStart: 49vw; --vhStart: 88vh; --rotateStart: 48.88deg;
+  --vwEnd: 49vw; --vhEnd: 84vh; --rotateEnd: 55.53deg;
+
+  --widthStart: 186px; --widthEnd: 187px;
+
+  --heightStart: 185px; --heightEnd: 186px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.seventhElem{
+  --vwStart: 64vw; --vhStart: 85vh; --rotateStart: 15deg;
+  --vwEnd: 64vw; --vhEnd: 80vh; --rotateEnd: 22deg;
+
+  --widthStart: 57px; --widthEnd: 58px;
+
+  --heightStart: 57px; --heightEnd: 58px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.eightElem{
+  --vwStart: 88vw; --vhStart: 58vh; --rotateStart: -42.66deg;
+  --vwEnd: 88vw; --vhEnd: 52vh; --rotateEnd: -49.33deg;
+
+  --widthStart: 57px; --widthEnd: 58px;
+
+  --heightStart: 57px; --heightEnd: 58px;
+
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.ninthElem{
+  --vwStart: 79vw; --vhStart: 69vh; --rotateStart: 15.61deg;
+  --vwEnd: 79vw; --vhEnd: 65vh; --rotateEnd: 21.32deg;
+
+  --widthStart: 57px; --widthEnd: 58px;
+
+  --heightStart: 57px; --heightEnd: 58px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.tenthElem{
+  --vwStart: 68vw; --vhStart: 66vh; --rotateStart: 120.83deg;
+  --vwEnd: 68vw; --vhEnd: 61vh; --rotateEnd: 110.33deg;
+
+  --widthStart: 57px; --widthEnd: 58px;
+
+  --heightStart: 56px; --heightEnd: 57px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.eleventhElem{
+  --vwStart: 60vw; --vhStart: 43vh; --rotateStart: -61.85deg;
+  --vwEnd: 60vw; --vhEnd: 37vh; --rotateEnd: -68.31deg;
+
+  --widthStart: 136px; --widthEnd: 137px;
+
+  --heightStart: 134px; --heightEnd: 135px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.twelvthElem{
+  --vwStart: 48vw; --vhStart: 61vh; --rotateStart: 12.45deg;
+  --vwEnd: 48vw; --vhEnd: 57vh; --rotateEnd: 6.13deg;
+
+  --widthStart: 146px; --widthEnd: 147px;
+
+  --heightStart: 145px; --heightEnd: 146px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.tirteenthElem{
+  --vwStart: 32vw; --vhStart: 78vh; --rotateStart: 42.99deg;
+  --vwEnd: 32vw; --vhEnd: 73vh; --rotateEnd: 48.13deg;
+
+  --widthStart: 146px; --widthEnd: 147px;
+
+  --heightStart: 145px; --heightEnd: 146px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.fourteenthElem{
+  --vwStart: 51vw; --vhStart: 25vh; --rotateStart: -118.22deg;
+  --vwEnd: 51vw; --vhEnd: 20vh; --rotateEnd: -122.34deg;
+
+  --widthStart: 135px; --widthEnd: 136px;
+
+  --heightStart: 133px; --heightEnd: 134px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.fifteenthElem{
+  --vwStart: 33vw; --vhStart: 38vh; --rotateStart: 113.59deg;
+  --vwEnd: 33vw; --vhEnd: 33vh; --rotateEnd: 107.11deg;
+
+  --widthStart: 229px; --widthEnd: 230px;
+
+  --heightStart: 226px; --heightEnd: 227px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.sixteenthElem{
+  --vwStart: 9vw; --vhStart: 65vh; --rotateStart: 108.74deg;
+  --vwEnd: 9vw; --vhEnd: 60vh; --rotateEnd: 112.33deg;
+
+  --widthStart: 268px; --widthEnd: 269px;
+
+  --heightStart: 264px; --heightEnd: 265px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.seventeenthElem{
+  --vwStart: 11vw; --vhStart: 19vh; --rotateStart: 81.26deg;
+  --vwEnd: 11vw; --vhEnd: 14vh; --rotateEnd: 84.33deg;
+
+  --widthStart: 301px; --widthEnd: 302px;
+
+  --heightStart: 296px; --heightEnd: 297px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.eighteenthElem{
+  --vwStart: -10vw; --vhStart: 44vh; --rotateStart: 143.65deg;
+  --vwEnd: -10vw; --vhEnd: 39vh; --rotateEnd: 138.22deg;
+
+  --widthStart: 268px; --widthEnd: 269px;
+
+  --heightStart: 264px; --heightEnd: 265px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+.nineteenthElem{
+  --vwStart: -10vw; --vhStart: -14vh; --rotateStart: 123.84deg;
+  --vwEnd: -10vw; --vhEnd: -14vh; --rotateEnd: 119.12deg;
+
+  --widthStart: 375px; --widthEnd: 376px;
+
+  --heightStart: 369px; --heightEnd: 370px;
+  
+  animation: upToDown 6.5s ease-in-out infinite alternate;
+}
+
+@keyframes upToDown{
+  0%{
+    transform: translate(var(--vwStart),var(--vhStart)) rotate(var(--rotateStart));
+    width: var(--widthStart);
+    height: var(--heightStart);
+  }
+
+  100%{
+    transform: translate(var(--vwEnd),var(--vhEnd)) rotate(var(--rotateEnd));
+    width: var(--widthEnd);
+    height: var(--heightEnd);
+  }
+}

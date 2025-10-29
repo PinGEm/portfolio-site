@@ -19,6 +19,7 @@ header img{
     height:42px;
     border-radius:50%;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .logo{
@@ -45,11 +46,13 @@ header h1, h2, a, button{
 }
 
 header h1{
+    cursor: pointer;
     font-size: 1.3em;
     letter-spacing: 1.1px;
 }
 
 header h2{
+    cursor: pointer;
     color: #B2B2B2;
     font-size: 1em;
     transition: 0.15s ease-in-out;
