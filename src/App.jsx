@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Background/>
       {/* Home Page */}
-      <div className={pageStyle.section}>
+      <div className={pageStyle.page}>
         <div className={pageStyle.introText}>
           <h1>Hello! I'm Marcus Timothy Ureta!</h1>
           <h2>Programming Student at CIIT SHS</h2>
@@ -20,6 +20,8 @@ function App() {
 
         <img src={pfp}></img>
       </div>
+
+      {/* Skills Page */}
       <Footer/>
     </>
   )

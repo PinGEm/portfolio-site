@@ -1,42 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-.section p,h1,h2{
+.page p,h1,h2{
     pointer-events:fill;
     font-family: "DM Sans", sans-serif;
 }
 
-.section h1, p{
+.page h1, p{
+    animation: loadingAnim 1s ease-in-out;
     transition: all 0.15s ease-in-out;
     color: white;
 }
 
-.section h1:hover, p:hover{
+.page h1:hover{
+    font-size:5.6em;
     color: #3ABDFF;
 }
 
-.section h2{
+.page p:hover{
+    color: #3ABDFF;
+}
+
+.page h2{
+    animation: loadingAnim 1s ease-in-out;
     transition: all 0.15s ease-in-out;
     color: #5678FF;
 }
 
-.section h2:hover{
+.page h2:hover{
     color: rgb(111, 0, 255);
 }
 
-.section h1{
+.page h1{
     font-size:5.5em;
 }
 
-.section h2{
+.page h2{
     font-size: 4.2em;
     font-weight: 700;
 }
 
-.section p{
+.page p{
     font-size:2.25em;
 }
 
-.section{
+.page{
     pointer-events: none;
     position:absolute;
     height:100vh;
@@ -48,7 +55,7 @@
 }
 
 @media(max-width:1080px){ /* TABLET */
-    .section{
+    .page{
         align-items:center;
         justify-content: space-evenly;
         flex-direction: column-reverse;
@@ -58,15 +65,15 @@
         text-align: center;
     }
 
-    .section h1{
+    .page h1{
         font-size:2em;
     }
 
-    .section h2{
+    .page h2{
         font-size: 1.7em;
     }
 
-    .section img{
+    .page img{
         margin-top:5%;
         width:10vh;
         height:10vh;
@@ -75,7 +82,7 @@
 
 @media(max-width: 600px)
 {
-    .section{
+    .page{
         align-items: center;
         justify-content: center;
     }
@@ -86,19 +93,22 @@
         max-width:400px;
     }
 
-    .section h1{
+    .page h1{
+        margin-top:0.5%;
         font-size:2.75em;
     }
 
-    .section h2{
+    .page h2{
+        margin-top:0.5%;
         font-size: 2em;
     }
 
-    .section p{
+    .page p{
+        margin-top:0.5%;
         font-size:1.1em;
     }
 
-    .section img{
+    .page img{
         margin-bottom:10%;
         width:10vh;
         height:10vh;
@@ -123,18 +133,43 @@
     margin-bottom: 3%;
 }
 
-.section img{
+.page img{
     pointer-events: all;
     scale:3;
     background-color: hsla(0,0%,0%, 0.18);
     box-shadow: 0 0 10px hsla(199, 79%, 52%, 0.25);
     border-radius:50%;
     border: 3px solid #00AAFF;
+    animation: loadingAnim_img 1.5s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-.section img:hover:not(:active){
+.page img:hover:not(:active){
     background-color: rgba(53, 8, 66, 0.18);
     box-shadow: 0 0 10px #9900FF;
     border: 3px solid rgb(111, 0, 255);
+}
+
+@keyframes loadingAnim{
+    0%{
+        opacity:0;
+        transform:translate(-10%, -10%);
+    }
+
+    100%{
+        opacity:1;
+        transform:translate(0%,0%);
+    }
+}
+
+@keyframes loadingAnim_img{
+    0%{
+        opacity:0;
+        transform:translate(10%, 10%);
+    }
+
+    100%{
+        opacity:1;
+        transform:translate(0%,0%);
+    }
 }
