@@ -1,47 +1,25 @@
-import styles from './App.module.css';
 import Header from './Header/Header.jsx';
 import Footer from './Footer/Footer.jsx';
+import Background from './Background.jsx';
+import pageStyle from './HomePage.module.css';
 
-import {useState, useEffect} from 'react';
-
+import pfp from './assets/pfp.svg';
 function App() {
-
-  
 
   return (
     <>
       <Header/>
+      <Background/>
+      {/* Home Page */}
+      <div className={pageStyle.section}>
+        <div className={pageStyle.introText}>
+          <h1>Hello! I'm Marcus Timothy Ureta!</h1>
+          <h2>Programming Student at CIIT SHS</h2>
+          <p>A proficient programming student with specializations in Software, Gaming, and Web Development</p>
+        </div>
 
-      {/* --- Moving Elements --- */}
-      <div className = {styles.baseMoveElement + " " + styles.firstElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.secondElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.thirdElem}></div>
-      
-      
-      <div className = {styles.baseMoveElement + " " + styles.fourthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.fifthELem}></div>
-
-      <div className = {styles.baseMoveElement + " " + styles.sixthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.seventhElem}></div>
-
-
-      <div className = {styles.baseMoveElement + " " + styles.eightElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.ninthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.tenthElem}></div>
-
-      <div className = {styles.baseMoveElement + " " + styles.eleventhElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.twelvthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.tirteenthElem}></div>
-      
-      <div className = {styles.baseMoveElement + " " + styles.fourteenthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.fifteenthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.sixteenthElem}></div>
-
-      <div className = {styles.baseMoveElement + " " + styles.seventeenthElem}></div>
-      <div className = {styles.baseMoveElement + " " + styles.eighteenthElem}></div>
-
-      <div className = {styles.baseMoveElement + " " + styles.nineteenthElem}></div>
-
+        <img src={pfp}></img>
+      </div>
       <Footer/>
     </>
   )

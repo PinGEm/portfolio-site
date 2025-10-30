@@ -1,10 +1,16 @@
 import styles from './Footer.module.css';
+
 import facebook from '../assets/Facebook.svg';
 import github from '../assets/Github.svg';
 import instagram from '../assets/Instagram.svg';
 import linkedin from '../assets/Linkedin.svg';
 import mail from '../assets/Mail.svg';
 
+import facebook_selected from '../assets/Facebook_SELECT.svg';
+import github_selected from '../assets/Github_SELECT.svg';
+import instagram_selected from '../assets/Instagram_SELECT.svg';
+import linkedin_selected from '../assets/Linkedin_SELECT.svg';
+import mail_selected from '../assets/Mail_SELECT.svg';
 
 function Footer()
 {

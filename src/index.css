@@ -1,4 +1,16 @@
 html, body{
-  height:100%;
+  overflow-x:hidden;
+  margin:0;
+}
+
+body{
+  /*background-image: linear-gradient(135deg, #102261, #3B1E6B, #4C1C7B); */
+  min-height:100vh;
+  margin:0;
+  padding:0;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:cover;
   background-image: linear-gradient(135deg, #081952, #361B64, #4C1C7B);
+  position:static;
 }
