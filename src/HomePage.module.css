@@ -82,21 +82,20 @@
 
     .introText{
         text-align: left;
-        margin-left:3%;
         margin-top:15%;
         max-width:400px;
     }
 
     .section h1{
-        font-size:3em;
+        font-size:2.75em;
     }
 
     .section h2{
-        font-size: 2.25em;
+        font-size: 2em;
     }
 
     .section p{
-        font-size:1.3em;
+        font-size:1.1em;
     }
 
     .section img{
