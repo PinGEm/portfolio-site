@@ -131,6 +131,7 @@
     }
 
     #rightText{
+        margin-left:10vw;
         text-align:center;
         max-width:280px;
     }
