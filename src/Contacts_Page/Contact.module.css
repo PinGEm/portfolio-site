@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.page h1, .page p{
+    color:white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.page h1, .page p, .page img{
+    pointer-events: all;
+}
+
+.page h1, .page p{
+    transition: all 0.15s ease-in-out;
+}
+
+.page{
+    pointer-events: none;
+    position:absolute;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialSide{
+    margin-left:3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-grow:1.35;
+    flex-basis: 0;
+}
+
+.socials{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+#rightText{
+    margin-top:5%;
+    text-align: justify;
+    flex-grow:1;
+    flex-basis: 0;
+    line-height:1.5;
+    max-width:30%;
+    margin-right:10%;
+}
+
+#rightText:hover{
+    color: hsl(0, 0%, 85%);
+}
+
+.page h1{
+    font-size:3.3em;
+    padding-bottom:1.25%;
+    border-bottom: 2px solid #00AAFF;
+}
+
+.page h1:hover{
+    color: #3ABDFF;
+    border-bottom: 2px solid rgb(111, 0, 255);;
+}
+
+.page p{
+    font-size:1.8em;
+}
+
+.page p:hover{
+    color: #3ABDFF;
+}
+
+.socialSide img{
+    padding:4px;
+    height:52px;
+    width:52px;
+    margin-right:5%;
+}
+
+.social a{
+    text-decoration: none;
+    white-space: nowrap;
+    word-break: normal;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom:1%;
+}
+
+.available{
+    color: #23FF0F;
+    font-weight:700;
+}
+
+@media(max-width:1080px){
+    .page h1{
+        font-size:2.2em;
+    }
+
+    .page p{
+        font-size:1.3em;
+    }
+
+    .socialSide img{
+        height:40px;
+        width:40px;
+    }
+}
+
+@media(max-width:600px){
+
+    .page{
+        flex-direction: column;
+    }
+
+    .page h1{
+        font-size:1.45em;
+    }
+
+    .page p{
+        font-size:0.95em;
+    }
+
+    .socialSide img{
+        height:20px;
+        width:20px;
+    }
+
+    #rightText{
+        max-width:280px;
+    }
+}

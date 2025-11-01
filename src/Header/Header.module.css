@@ -156,11 +156,11 @@ nav a:hover:not(.selected){
     }
 
     nav a{
-        font-size: 1.1em;
+        font-size: 1em;
         margin-left:2%;
     }
 
     nav a:hover:not(.selected){
-        font-size: 1.05em;
+        font-size: 0.95em;
     }
 }
