@@ -13,6 +13,7 @@ import linkedin_selected from '../assets/Linkedin_SELECT.svg';
 import mail_selected from '../assets/Mail_SELECT.svg';
 
 import Logo from './imageLogo.jsx';
+import {Link} from "react-router-dom"
 
 function Footer()
 {
@@ -28,9 +29,17 @@ function Footer()
                 <h1>Quick Links</h1>
 
                 <div className={styles.links}>
-                    <a href="">Projects</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
+                    <Link to="/project">
+                        Projects
+                    </Link>
+                    
+                    <Link to="/about">
+                        About
+                    </Link>
+
+                    <Link to="/contact">
+                        Contact
+                    </Link>
                 </div>
             </div>
 

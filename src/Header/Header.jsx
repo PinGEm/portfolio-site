@@ -2,6 +2,8 @@ import pfp from '../assets/pfp.svg';
 import resume_download from '../assets/resume.pdf'
 import styles from './Header.module.css';
 
+import {NavLink} from "react-router-dom"
+
 function Header()
 {
     return(
@@ -16,10 +18,21 @@ function Header()
             </div>
 
             <nav>
-                <a href="" id={styles.selected}>Home</a>
-                <a href="">Projects</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <NavLink to="/" className={({isActive}) => (isActive ? styles.selected : undefined)}>
+                    Home
+                </NavLink>
+
+                <NavLink to="/project" className={({isActive}) => (isActive ? styles.selected : undefined)}>
+                    Projects
+                </NavLink>
+
+                <NavLink to="/about" className={({isActive}) => (isActive ? styles.selected : undefined)}>
+                    About
+                </NavLink>
+
+                <NavLink to="/contact" className={({isActive}) => (isActive ? styles.selected : undefined)}>
+                    Contact
+                </NavLink>
             </nav>
 
             <button>

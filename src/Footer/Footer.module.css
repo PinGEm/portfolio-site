@@ -39,11 +39,11 @@ footer a{
     margin-top: 0.4%;
 }
 
-.section_one h1, h2{
+.section_one h1, .section_one h2{
     transition: all 0.15s ease-in-out;
 }
 
-.section_one h1:hover, h2:hover{
+.section_one h1:hover, .section_one h2:hover{
     color: hsl(0, 0%, 85%);
 }
 

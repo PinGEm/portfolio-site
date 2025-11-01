@@ -97,7 +97,7 @@ button:hover{
     box-shadow: 0 0 15px hsla(199, 79%, 52%, 0.75);
 }
 
-#selected{
+.selected{
     padding-top:0.5%;
     padding-bottom:0.5%;
     padding-left:22px;
@@ -110,11 +110,11 @@ button:hover{
     border-width: 2px;
 }
 
-#selected:hover{
+.selected:hover{
     background-color: #1f5269;
 }
 
-nav a:hover:not(#selected){
+nav a:hover:not(.selected){
     font-size: 1.15em;
     color:white;
     padding-top:5px;
@@ -156,6 +156,11 @@ nav a:hover:not(#selected){
     }
 
     nav a{
+        font-size: 1.1em;
         margin-left:2%;
+    }
+
+    nav a:hover:not(.selected){
+        font-size: 1.05em;
     }
 }
