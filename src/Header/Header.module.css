@@ -39,7 +39,7 @@ header img{
     line-height: 0.5em;
 }
 
-header h1, h2, a, button{
+header h1, h2, a, header button{
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 435;
@@ -72,7 +72,7 @@ nav a{
     transition: 0.1s cubic-bezier(.22,.5,.92,.59); /* note to self: probably change to a custom beizer transition */
 }
 
-button{
+header button{
     cursor: pointer;
     border-style: none;
     border-radius: 7px;
@@ -87,12 +87,12 @@ button{
     transition: background-image 0.35s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-button a{
+header button a{
     color:white;
     text-decoration: none;
 }
 
-button:hover{
+header button:hover{
     background-image: linear-gradient(to right, #25A7E5 0%, #337ed4 66%, #295ad4 100%);
     box-shadow: 0 0 15px hsla(199, 79%, 52%, 0.75);
 }

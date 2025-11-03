@@ -59,7 +59,7 @@ function Footer()
                     <a href="https://www.linkedin.com/in/marcus-ureta-858607382/">
                         <Logo normImage={linkedin} hoverImg={linkedin_selected} alt="linkedin profile"/>
                     </a>
-                    <a href="">
+                    <a href="mailto:marcustimothy.ureta@gmail.com">
                         <Logo normImage={mail} hoverImg={mail_selected} alt="email"/>
                     </a>
                 </div>

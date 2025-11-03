@@ -14,7 +14,7 @@ function Home() {
       <div className={pageStyle.page}>
         <div className={pageStyle.introText}>
           <h1>Hello! I'm Marcus Timothy Ureta!</h1>
-          <h2>Junior Developer Studying at CIIT SHS</h2>
+          <h2>Programming Student at CIIT SHS</h2>
           <p>A proficient programming student with specializations in Software, Gaming, and Web Development</p>
         </div>
 

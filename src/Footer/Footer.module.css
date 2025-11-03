@@ -5,10 +5,6 @@ footer{
     box-shadow: 0px 15px 10px -1px hsla(0,0%,0%, 0.15) inset;
     font-family: "DM Sans", sans-serif;
     color:white;
-    position:absolute;
-    position:fixed;
-    bottom:0;
-    right:0;
     display:flex;
     justify-content: space-between;
     align-items:center;
