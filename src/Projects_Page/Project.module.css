@@ -210,7 +210,7 @@
     }
 
     .page p{
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .card{
@@ -241,14 +241,24 @@
 @media(max-width: 600px)
 {
     .page{
+        margin-top:8vh;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
+    .page h1{
+        font-size:3em;
+        text-align: center;
+    }
+
     .page p{
         text-align: left;
-        max-width:65%;
+        max-width:75%;
         font-size: 0.95em;
+    }
+
+    .cards{
+        max-width:75%;
     }
 
     .card{
