@@ -2,7 +2,7 @@ import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 import Background from '../Background.jsx';
 import pageStyle from './Project.module.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Card from './Card.jsx';
 
