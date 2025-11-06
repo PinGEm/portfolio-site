@@ -26,9 +26,12 @@ import ba from '../assets/basic_algorithm.svg';
 
 function Project() {
 
-  const[filter, setFilter] = useState('best');
+  const[filter, setFilter] = useState('all');
 
-  const handleFilter = (type) => setFilter(type);
+  const handleFilter = (type) => {
+    setFilter('disable');
+    setFilter(type);
+  }
 
   return (
     <>
