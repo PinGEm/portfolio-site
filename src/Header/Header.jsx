@@ -33,6 +33,10 @@ function Header()
                 <NavLink to="/contact" className={({isActive}) => (isActive ? styles.selected : undefined)}>
                     Contact
                 </NavLink>
+
+                <NavLink to="/event" className={({isActive}) => (isActive ? styles.selected : undefined)}>
+                    Event
+                </NavLink>
             </nav>
 
             <button>
