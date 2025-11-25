@@ -12,11 +12,22 @@
     align-items:center;
 }
 
-.page h1, .page p, .page h2{
+.page h1, .page p, .page h2, .page ul{
     z-index:1;
     margin:0;
     color:white;
     font-family: "DM Sans", sans-serif;
+}
+
+.page ul{
+    width:22.7vw; 
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+.page li{
+    font-size: 1.65em;
+    margin:0.25%;
 }
 
 .page h1{
@@ -113,6 +124,10 @@
     background-color: hsla(0,0%,0%,0);
     border:none;
     transition: all 0.2s ease-in-out;
+}
+
+.selectionList button:hover{
+    color: #018dd3;
 }
 
 .imageSelection{

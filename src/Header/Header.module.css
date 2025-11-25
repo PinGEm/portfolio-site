@@ -67,7 +67,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #D7D7D7;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-right: 30px;
     transition: 0.1s cubic-bezier(.22,.5,.92,.59); /* note to self: probably change to a custom beizer transition */
 }
@@ -115,7 +115,7 @@ header button:hover{
 }
 
 nav a:hover:not(.selected){
-    font-size: 1.15em;
+    font-size: 1.1em;
     color:white;
     padding-top:5px;
     padding-bottom:5px;
@@ -142,7 +142,7 @@ nav a:hover:not(.selected){
 
 @media(max-width:1080px){
     .text h1{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
@@ -156,11 +156,10 @@ nav a:hover:not(.selected){
     }
 
     nav a{
-        font-size: 1em;
-        margin-left:2%;
+        font-size: 0.65em;
     }
 
     nav a:hover:not(.selected){
-        font-size: 0.95em;
+        font-size: 0.65em;
     }
 }

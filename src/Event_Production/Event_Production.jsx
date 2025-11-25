@@ -55,7 +55,7 @@ function Event_Production()
         <Background/>
 
         <div className={pageStyle.page}>
-            <h1>Event Production</h1>
+            <h1>Dulaang Kayumutiara</h1>
             <p>As a member of the Logistics team, I was responsible for creating the marketing materials for Prinsesang Mariposa as well as designing the ticket and playbill layouts for Dulaang Kayumutiara.</p>
 
             <div className={pageStyle.selectionList}>
@@ -81,6 +81,10 @@ function Event_Production()
 
                 <button className={`${filter === 'w17' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('w17')}>
                     Week 17 | 
+                </button>
+
+                <button className={`${filter === 'achv' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('achv')}>
+                    Achievements | 
                 </button>
 
                 <button className={`${filter === 'sum_refl' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('sum_refl')}>
@@ -147,6 +151,7 @@ function Event_Production()
                 <p>During Week 16, I continued working and finalizing the playbill pages for Kalawanging Korona. I revised and finalized the main character pages, then I assisted in the creation of the creatives, production and technical team of Kalawanging Korona.</p>
             </div>
             
+            
             <div className={pageStyle.week17 + " " + `${filter === 'w17' ? undefined : pageStyle.disable}`}>
                 <div className={pageStyle.imageSelection}>
                     <img src={tv_logistics}></img>
@@ -156,6 +161,19 @@ function Event_Production()
 
                 <h2>Week Summary:</h2>
                 <p>During Week 17, I completed the remaining playbill pages for Kalawanging Korona and began working on the foreword layout. I designed the pages for the tech-voc team involved in the production and then proceeded to develop the foreword’s page design.</p>
+            </div>
+
+            <div className={pageStyle.week17 + " " + `${filter === 'achv' ? undefined : pageStyle.disable}`}>
+                <h2>Achievements: </h2>
+                <p>Throughout my time working on the Dulaang Kayumutiara play, I contributed to/responsible for the following works for my part as a group member in the Logistics Team at 12-Java: </p>
+                <ul>
+                    <li>Dulaang Kayumutiara Ticket</li>
+                    <li>Playbill Moodboard</li>
+                    <li>Dulaang Kayumutiara Playbill Layout</li>
+                    <li>Kalawanging Korona Playbill Section</li>
+                    <li>Playbill Foreword Layout</li>
+                </ul>
+                <p>Through these assignments given to me, I have been able to provide high-quality products for my tasks as a Logistics Team member. Providing support to my team and contributing to the final output of our work as a team.</p>
             </div>
 
             <div className={pageStyle.week17 + " " + `${filter === 'sum_refl' ? undefined : pageStyle.disable}`}>
