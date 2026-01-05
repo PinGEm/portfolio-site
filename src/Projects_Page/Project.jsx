@@ -22,6 +22,8 @@ import op from '../assets/old_portfolio.svg';
 import wg from '../assets/workout_game.svg';
 import si from '../assets/student_infoapp.svg';
 import tt from '../assets/truth_table.svg';
+import nn from '../assets/neural_network.svg';
+import cai from '../assets/collective_ai.svg';
 import ba from '../assets/basic_algorithm.svg';
 
 function Project() {
@@ -42,9 +44,9 @@ function Project() {
         <p>Showcase of all my web development and software development projects over the year</p>
         <div className={pageStyle.tabList}>
           <button className={pageStyle.bestButton + ' ' + `${filter === 'best' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('best')} >⭐ Best Works (3)</button>
-          <button className={`${filter === 'all' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('all')}>🖥️ All (16)</button>
+          <button className={`${filter === 'all' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('all')}>🖥️ All (18)</button>
           <button className={`${filter === 'websites' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('websites')}>🌐 Websites (7)</button>
-          <button className={`${filter === 'programs' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('programs')}>⚙️ Programs (9)</button>
+          <button className={`${filter === 'programs' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('programs')}>⚙️ Programs (11)</button>
         </div>
 
         <div className={pageStyle.cards}>
@@ -116,6 +118,16 @@ function Project() {
           <Card image={si} header="Student Information App" 
             description="A Unity application that allows users to enter and view student details such as name, date of birth, and age. As the only developer, I was in charge for both the UI design and core programming." 
             tech1="C#" tech2="Unity" link="https://github.com/PinGEm/Student-Information-Application"
+            showState= {filter === 'all' || filter === 'programs'}/>
+
+          <Card image={cai} header="Collective AI Program" 
+            description="A program that combines both a neural network and swarm intelligence AI to compute the most efficient maze path throughout several generations. I served as the sole developer, responsible for the swarm intelligence logic." 
+            tech1="C++" link="https://github.com/PinGEm/ProgLang2-QA-2"
+            showState= {filter === 'all' || filter === 'programs'}/>
+
+          <Card image={nn} header="Neural Network Program" 
+            description="A multi-purposed application that uses a neural network artifical intelligence with trained inputs stored inside the program. Served as the sole developer creating the neural network and providing training data." 
+            tech1="C++" link="https://github.com/PinGEm/PT7---Programming-Languages-2"
             showState= {filter === 'all' || filter === 'programs'}/>
 
           <Card image={tt} header="Truth Table Program" 
