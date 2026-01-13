@@ -68,7 +68,7 @@ function Project() {
 
           <Card image={mu} header="MU Machine" 
           description="An Arduino-based game console featuring three fully playable games. I independently designed, engineered, and programmed the entire system, from hardware integration to game logic." 
-          tech1="C++" tech2="Arduino" link=""
+          tech1="C++" tech2="Arduino" link="https://github.com/PinGEm/MU_Machine_V1/tree/main"
           showState= {filter === 'all'}/>
 
           <Card image={is} header="Inventory System Application" 
