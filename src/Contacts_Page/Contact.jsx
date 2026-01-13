@@ -29,7 +29,7 @@ function Contact() {
             <Contacts tag="@macky.ureta" normImg={facebook} hoverImg={facebook_selected} link="https://facebook.com/macky.ureta"/>
             <Contacts tag="@marcus__uretaah" normImg={instagram} hoverImg={instagram_selected} link="https://www.instagram.com/marcus__uretaah/#"/>
             <Contacts tag="@Marcus Ureta" normImg={linkedin} hoverImg={linkedin_selected} link="https://www.linkedin.com/in/marcus-ureta-858607382/"/>
-            <Contacts tag="marcustimothy.ureta@gmail.com" normImg={mail} hoverImg={mail_selected}/>
+            <Contacts tag="marcus.ureta@ciit.edu.ph" normImg={mail} hoverImg={mail_selected}/>
           </div>
         </div>
 

@@ -25,6 +25,7 @@ import tt from '../assets/truth_table.svg';
 import nn from '../assets/neural_network.svg';
 import cai from '../assets/collective_ai.svg';
 import ba from '../assets/basic_algorithm.svg';
+import mu from '../assets/mu_machine.svg';
 
 function Project() {
 
@@ -44,7 +45,7 @@ function Project() {
         <p>Showcase of all my web development and software development projects over the year</p>
         <div className={pageStyle.tabList}>
           <button className={pageStyle.bestButton + ' ' + `${filter === 'best' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('best')} >⭐ Best Works (3)</button>
-          <button className={`${filter === 'all' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('all')}>🖥️ All (18)</button>
+          <button className={`${filter === 'all' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('all')}>🖥️ All (19)</button>
           <button className={`${filter === 'websites' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('websites')}>🌐 Websites (7)</button>
           <button className={`${filter === 'programs' ? pageStyle.selected : undefined}`} onClick={() => handleFilter('programs')}>⚙️ Programs (11)</button>
         </div>
@@ -64,6 +65,11 @@ function Project() {
             description="A redesigned portfolio site showcasing my previous work, skills, and abilities to potential clients. As the sole full-stack developer, I built and designed the entire site from scratch with a focus on interactivity." 
             tech1="React" tech2="JS" link="https://marcusureta-portfolio.vercel.app/"
             showState= {filter === 'all' || filter === 'websites' || filter === 'best'}/>
+
+          <Card image={mu} header="MU Machine" 
+          description="An Arduino-based game console featuring three fully playable games. I independently designed, engineered, and programmed the entire system, from hardware integration to game logic." 
+          tech1="C++" tech2="Arduino" link=""
+          showState= {filter === 'all'}/>
 
           <Card image={is} header="Inventory System Application" 
             description="A Windows Presentation Foundation application for managing inventory, allowing users to view, add, and remove items. As the sole developer, I designed and developed the entire application from scratch." 
